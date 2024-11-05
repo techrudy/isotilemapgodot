@@ -1,0 +1,1092 @@
+[gd_scene load_steps=43 format=4 uid="uid://b4luug208ouf3"]
+
+[ext_resource type="Texture2D" uid="uid://bhp87y5rqkxkh" path="res://spritesheet.png" id="1_ah24w"]
+[ext_resource type="Texture2D" uid="uid://bf6q3o26jj8qr" path="res://Small-8-Direction-Characters_by_AxulArt.png" id="2_631f6"]
+[ext_resource type="Script" path="res://animated_sprite_2d.gd" id="4_0r1c3"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hj8ij"]
+resource_name = "Walkable"
+texture = ExtResource("1_ah24w")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+9:2/0 = 0
+10:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+9:3/0 = 0
+10:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6im1c"]
+resource_name = "Not Walkable"
+texture = ExtResource("1_ah24w")
+texture_region_size = Vector2i(32, 32)
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+10:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+9:5/0 = 0
+10:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+10:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+8:7/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+4:8/0 = 0
+5:8/0 = 0
+6:8/0 = 0
+7:8/0 = 0
+8:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+5:9/0 = 0
+6:9/0 = 0
+7:9/0 = 0
+8:9/0 = 0
+0:10/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+3:10/0 = 0
+4:10/0 = 0
+5:10/0 = 0
+6:10/0 = 0
+7:10/0 = 0
+8:10/0 = 0
+9:10/0 = 0
+10:10/0 = 0
+9:6/0 = 0
+3:8/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_1mvlc"]
+tile_shape = 1
+tile_layout = 5
+tile_size = Vector2i(32, 16)
+sources/0 = SubResource("TileSetAtlasSource_hj8ij")
+sources/1 = SubResource("TileSetAtlasSource_6im1c")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ik62b"]
+resource_name = "Walkable"
+texture = ExtResource("1_ah24w")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, 8)
+1:0/0 = 0
+1:0/0/texture_origin = Vector2i(0, 8)
+2:0/0 = 0
+2:0/0/texture_origin = Vector2i(0, 8)
+3:0/0 = 0
+3:0/0/texture_origin = Vector2i(0, 8)
+4:0/0 = 0
+4:0/0/texture_origin = Vector2i(0, 8)
+5:0/0 = 0
+5:0/0/texture_origin = Vector2i(0, 8)
+6:0/0 = 0
+6:0/0/texture_origin = Vector2i(0, 8)
+7:0/0 = 0
+7:0/0/texture_origin = Vector2i(0, 8)
+8:0/0 = 0
+8:0/0/texture_origin = Vector2i(0, 8)
+9:0/0 = 0
+9:0/0/texture_origin = Vector2i(0, 8)
+10:0/0 = 0
+10:0/0/texture_origin = Vector2i(0, 8)
+0:1/0 = 0
+0:1/0/texture_origin = Vector2i(0, 8)
+1:1/0 = 0
+1:1/0/texture_origin = Vector2i(0, 8)
+2:1/0 = 0
+2:1/0/texture_origin = Vector2i(0, 8)
+3:1/0 = 0
+3:1/0/texture_origin = Vector2i(0, 8)
+4:1/0 = 0
+4:1/0/texture_origin = Vector2i(0, 8)
+5:1/0 = 0
+5:1/0/texture_origin = Vector2i(0, 8)
+6:1/0 = 0
+6:1/0/texture_origin = Vector2i(0, 8)
+7:1/0 = 0
+7:1/0/texture_origin = Vector2i(0, 8)
+8:1/0 = 0
+8:1/0/texture_origin = Vector2i(0, 8)
+9:1/0 = 0
+9:1/0/texture_origin = Vector2i(0, 8)
+10:1/0 = 0
+10:1/0/texture_origin = Vector2i(0, 8)
+0:2/0 = 0
+0:2/0/texture_origin = Vector2i(0, 8)
+1:2/0 = 0
+1:2/0/texture_origin = Vector2i(0, 8)
+2:2/0 = 0
+2:2/0/texture_origin = Vector2i(0, 8)
+3:2/0 = 0
+3:2/0/texture_origin = Vector2i(0, 8)
+4:2/0 = 0
+4:2/0/texture_origin = Vector2i(0, 8)
+5:2/0 = 0
+5:2/0/texture_origin = Vector2i(0, 8)
+6:2/0 = 0
+6:2/0/texture_origin = Vector2i(0, 8)
+7:2/0 = 0
+7:2/0/texture_origin = Vector2i(0, 8)
+8:2/0 = 0
+8:2/0/texture_origin = Vector2i(0, 8)
+9:2/0 = 0
+9:2/0/texture_origin = Vector2i(0, 8)
+10:2/0 = 0
+10:2/0/texture_origin = Vector2i(0, 8)
+0:3/0 = 0
+0:3/0/texture_origin = Vector2i(0, 8)
+1:3/0 = 0
+1:3/0/texture_origin = Vector2i(0, 8)
+2:3/0 = 0
+2:3/0/texture_origin = Vector2i(0, 8)
+3:3/0 = 0
+3:3/0/texture_origin = Vector2i(0, 8)
+4:3/0 = 0
+4:3/0/texture_origin = Vector2i(0, 8)
+5:3/0 = 0
+5:3/0/texture_origin = Vector2i(0, 8)
+6:3/0 = 0
+6:3/0/texture_origin = Vector2i(0, 8)
+7:3/0 = 0
+7:3/0/texture_origin = Vector2i(0, 8)
+8:3/0 = 0
+8:3/0/texture_origin = Vector2i(0, 8)
+9:3/0 = 0
+9:3/0/texture_origin = Vector2i(0, 8)
+10:3/0 = 0
+10:3/0/texture_origin = Vector2i(0, 8)
+0:4/0 = 0
+0:4/0/texture_origin = Vector2i(0, 8)
+1:4/0 = 0
+1:4/0/texture_origin = Vector2i(0, 8)
+2:4/0 = 0
+2:4/0/texture_origin = Vector2i(0, 8)
+3:4/0 = 0
+3:4/0/texture_origin = Vector2i(0, 8)
+4:4/0 = 0
+4:4/0/texture_origin = Vector2i(0, 8)
+5:4/0 = 0
+5:4/0/texture_origin = Vector2i(0, 8)
+6:4/0 = 0
+6:4/0/texture_origin = Vector2i(0, 8)
+7:4/0 = 0
+7:4/0/texture_origin = Vector2i(0, 8)
+8:4/0 = 0
+8:4/0/texture_origin = Vector2i(0, 8)
+9:4/0 = 0
+9:4/0/texture_origin = Vector2i(0, 8)
+10:4/0 = 0
+10:4/0/texture_origin = Vector2i(0, 8)
+0:5/0 = 0
+0:5/0/texture_origin = Vector2i(0, 8)
+1:5/0 = 0
+1:5/0/texture_origin = Vector2i(0, 8)
+2:5/0 = 0
+2:5/0/texture_origin = Vector2i(0, 8)
+3:5/0 = 0
+3:5/0/texture_origin = Vector2i(0, 8)
+4:5/0 = 0
+4:5/0/texture_origin = Vector2i(0, 8)
+5:5/0 = 0
+5:5/0/texture_origin = Vector2i(0, 8)
+6:5/0 = 0
+6:5/0/texture_origin = Vector2i(0, 8)
+7:5/0 = 0
+7:5/0/texture_origin = Vector2i(0, 8)
+8:5/0 = 0
+8:5/0/texture_origin = Vector2i(0, 8)
+9:5/0 = 0
+9:5/0/texture_origin = Vector2i(0, 8)
+10:5/0 = 0
+10:5/0/texture_origin = Vector2i(0, 8)
+0:6/0 = 0
+0:6/0/texture_origin = Vector2i(0, 8)
+1:6/0 = 0
+1:6/0/texture_origin = Vector2i(0, 8)
+2:6/0 = 0
+2:6/0/texture_origin = Vector2i(0, 8)
+3:6/0 = 0
+3:6/0/texture_origin = Vector2i(0, 8)
+4:6/0 = 0
+4:6/0/texture_origin = Vector2i(0, 8)
+5:6/0 = 0
+5:6/0/texture_origin = Vector2i(0, 8)
+6:6/0 = 0
+6:6/0/texture_origin = Vector2i(0, 8)
+7:6/0 = 0
+7:6/0/texture_origin = Vector2i(0, 8)
+8:6/0 = 0
+8:6/0/texture_origin = Vector2i(0, 8)
+10:6/0 = 0
+10:6/0/texture_origin = Vector2i(0, 8)
+0:7/0 = 0
+0:7/0/texture_origin = Vector2i(0, 8)
+1:7/0 = 0
+1:7/0/texture_origin = Vector2i(0, 8)
+2:7/0 = 0
+2:7/0/texture_origin = Vector2i(0, 8)
+3:7/0 = 0
+3:7/0/texture_origin = Vector2i(0, 8)
+4:7/0 = 0
+4:7/0/texture_origin = Vector2i(0, 8)
+5:7/0 = 0
+5:7/0/texture_origin = Vector2i(0, 8)
+6:7/0 = 0
+6:7/0/texture_origin = Vector2i(0, 8)
+7:7/0 = 0
+7:7/0/texture_origin = Vector2i(0, 8)
+8:7/0 = 0
+8:7/0/texture_origin = Vector2i(0, 8)
+0:8/0 = 0
+0:8/0/texture_origin = Vector2i(0, 8)
+1:8/0 = 0
+1:8/0/texture_origin = Vector2i(0, 8)
+2:8/0 = 0
+2:8/0/texture_origin = Vector2i(0, 8)
+4:8/0 = 0
+4:8/0/texture_origin = Vector2i(0, 8)
+5:8/0 = 0
+5:8/0/texture_origin = Vector2i(0, 8)
+6:8/0 = 0
+6:8/0/texture_origin = Vector2i(0, 8)
+7:8/0 = 0
+7:8/0/texture_origin = Vector2i(0, 8)
+8:8/0 = 0
+8:8/0/texture_origin = Vector2i(0, 8)
+0:9/0 = 0
+0:9/0/texture_origin = Vector2i(0, 8)
+1:9/0 = 0
+1:9/0/texture_origin = Vector2i(0, 8)
+2:9/0 = 0
+2:9/0/texture_origin = Vector2i(0, 8)
+3:9/0 = 0
+3:9/0/texture_origin = Vector2i(0, 8)
+4:9/0 = 0
+4:9/0/texture_origin = Vector2i(0, 8)
+5:9/0 = 0
+5:9/0/texture_origin = Vector2i(0, 8)
+6:9/0 = 0
+6:9/0/texture_origin = Vector2i(0, 8)
+7:9/0 = 0
+7:9/0/texture_origin = Vector2i(0, 8)
+8:9/0 = 0
+8:9/0/texture_origin = Vector2i(0, 8)
+0:10/0 = 0
+0:10/0/texture_origin = Vector2i(0, 8)
+1:10/0 = 0
+1:10/0/texture_origin = Vector2i(0, 8)
+2:10/0 = 0
+2:10/0/texture_origin = Vector2i(0, 8)
+3:10/0 = 0
+3:10/0/texture_origin = Vector2i(0, 8)
+4:10/0 = 0
+4:10/0/texture_origin = Vector2i(0, 8)
+5:10/0 = 0
+5:10/0/texture_origin = Vector2i(0, 8)
+6:10/0 = 0
+6:10/0/texture_origin = Vector2i(0, 8)
+7:10/0 = 0
+7:10/0/texture_origin = Vector2i(0, 8)
+8:10/0 = 0
+8:10/0/texture_origin = Vector2i(0, 8)
+9:10/0 = 0
+9:10/0/texture_origin = Vector2i(0, 8)
+10:10/0 = 0
+10:10/0/texture_origin = Vector2i(0, 8)
+9:6/0 = 0
+9:6/0/texture_origin = Vector2i(0, 8)
+3:8/0 = 0
+3:8/0/texture_origin = Vector2i(0, 8)
+9:9/0 = 0
+9:9/0/texture_origin = Vector2i(0, 8)
+10:9/0 = 0
+10:9/0/texture_origin = Vector2i(0, 8)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xarfk"]
+resource_name = "Walls / Obstacle"
+texture = ExtResource("1_ah24w")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, 8)
+0:0/0/z_index = 1
+1:0/0 = 0
+1:0/0/texture_origin = Vector2i(0, 8)
+1:0/0/z_index = 1
+2:0/0 = 0
+2:0/0/texture_origin = Vector2i(0, 8)
+2:0/0/z_index = 1
+3:0/0 = 0
+3:0/0/texture_origin = Vector2i(0, 8)
+3:0/0/z_index = 1
+4:0/0 = 0
+4:0/0/texture_origin = Vector2i(0, 8)
+4:0/0/z_index = 1
+5:0/0 = 0
+5:0/0/texture_origin = Vector2i(0, 8)
+5:0/0/z_index = 1
+6:0/0 = 0
+6:0/0/texture_origin = Vector2i(0, 8)
+6:0/0/z_index = 1
+7:0/0 = 0
+7:0/0/texture_origin = Vector2i(0, 8)
+7:0/0/z_index = 1
+8:0/0 = 0
+8:0/0/texture_origin = Vector2i(0, 8)
+8:0/0/z_index = 1
+9:0/0 = 0
+9:0/0/texture_origin = Vector2i(0, 8)
+9:0/0/z_index = 1
+10:0/0 = 0
+10:0/0/texture_origin = Vector2i(0, 8)
+10:0/0/z_index = 1
+0:1/0 = 0
+0:1/0/texture_origin = Vector2i(0, 8)
+0:1/0/z_index = 1
+1:1/0 = 0
+1:1/0/texture_origin = Vector2i(0, 8)
+1:1/0/z_index = 1
+2:1/0 = 0
+2:1/0/texture_origin = Vector2i(0, 8)
+2:1/0/z_index = 1
+3:1/0 = 0
+3:1/0/texture_origin = Vector2i(0, 8)
+3:1/0/z_index = 1
+4:1/0 = 0
+4:1/0/texture_origin = Vector2i(0, 8)
+4:1/0/z_index = 1
+5:1/0 = 0
+5:1/0/texture_origin = Vector2i(0, 8)
+5:1/0/z_index = 1
+6:1/0 = 0
+6:1/0/texture_origin = Vector2i(0, 8)
+6:1/0/z_index = 1
+7:1/0 = 0
+7:1/0/texture_origin = Vector2i(0, 8)
+7:1/0/z_index = 1
+8:1/0 = 0
+8:1/0/texture_origin = Vector2i(0, 8)
+8:1/0/z_index = 1
+9:1/0 = 0
+9:1/0/texture_origin = Vector2i(0, 8)
+9:1/0/z_index = 1
+10:1/0 = 0
+10:1/0/texture_origin = Vector2i(0, 8)
+10:1/0/z_index = 1
+0:2/0 = 0
+0:2/0/texture_origin = Vector2i(0, 8)
+0:2/0/z_index = 1
+1:2/0 = 0
+1:2/0/texture_origin = Vector2i(0, 8)
+1:2/0/z_index = 1
+2:2/0 = 0
+2:2/0/texture_origin = Vector2i(0, 8)
+2:2/0/z_index = 1
+3:2/0 = 0
+3:2/0/texture_origin = Vector2i(0, 8)
+3:2/0/z_index = 1
+4:2/0 = 0
+4:2/0/texture_origin = Vector2i(0, 8)
+4:2/0/z_index = 1
+5:2/0 = 0
+5:2/0/texture_origin = Vector2i(0, 8)
+5:2/0/z_index = 1
+6:2/0 = 0
+6:2/0/texture_origin = Vector2i(0, 8)
+6:2/0/z_index = 1
+7:2/0 = 0
+7:2/0/texture_origin = Vector2i(0, 8)
+7:2/0/z_index = 1
+8:2/0 = 0
+8:2/0/texture_origin = Vector2i(0, 8)
+8:2/0/z_index = 1
+9:2/0 = 0
+9:2/0/texture_origin = Vector2i(0, 8)
+9:2/0/z_index = 1
+10:2/0 = 0
+10:2/0/texture_origin = Vector2i(0, 8)
+10:2/0/z_index = 1
+0:3/0 = 0
+0:3/0/texture_origin = Vector2i(0, 8)
+0:3/0/z_index = 1
+1:3/0 = 0
+1:3/0/texture_origin = Vector2i(0, 8)
+1:3/0/z_index = 1
+2:3/0 = 0
+2:3/0/texture_origin = Vector2i(0, 8)
+2:3/0/z_index = 1
+3:3/0 = 0
+3:3/0/texture_origin = Vector2i(0, 8)
+3:3/0/z_index = 1
+4:3/0 = 0
+4:3/0/texture_origin = Vector2i(0, 8)
+4:3/0/z_index = 1
+5:3/0 = 0
+5:3/0/texture_origin = Vector2i(0, 8)
+5:3/0/z_index = 1
+6:3/0 = 0
+6:3/0/texture_origin = Vector2i(0, 8)
+6:3/0/z_index = 1
+7:3/0 = 0
+7:3/0/texture_origin = Vector2i(0, 8)
+7:3/0/z_index = 1
+8:3/0 = 0
+8:3/0/texture_origin = Vector2i(0, 8)
+8:3/0/z_index = 1
+9:3/0 = 0
+9:3/0/texture_origin = Vector2i(0, 8)
+9:3/0/z_index = 1
+10:3/0 = 0
+10:3/0/texture_origin = Vector2i(0, 8)
+10:3/0/z_index = 1
+0:4/0 = 0
+0:4/0/texture_origin = Vector2i(0, 8)
+0:4/0/z_index = 1
+1:4/0 = 0
+1:4/0/texture_origin = Vector2i(0, 8)
+1:4/0/z_index = 1
+2:4/0 = 0
+2:4/0/texture_origin = Vector2i(0, 8)
+2:4/0/z_index = 1
+3:4/0 = 0
+3:4/0/texture_origin = Vector2i(0, 8)
+3:4/0/z_index = 1
+4:4/next_alternative_id = 2
+4:4/0 = 0
+4:4/0/texture_origin = Vector2i(0, 8)
+4:4/0/z_index = 1
+4:4/1 = 1
+4:4/1/flip_h = true
+4:4/1/texture_origin = Vector2i(0, 8)
+4:4/1/z_index = 1
+5:4/0 = 0
+5:4/0/texture_origin = Vector2i(0, 8)
+5:4/0/z_index = 1
+6:4/0 = 0
+6:4/0/texture_origin = Vector2i(0, 8)
+6:4/0/z_index = 1
+8:4/0 = 0
+8:4/0/texture_origin = Vector2i(0, 8)
+8:4/0/z_index = 1
+7:4/0 = 0
+7:4/0/texture_origin = Vector2i(0, 8)
+7:4/0/z_index = 1
+9:4/0 = 0
+9:4/0/texture_origin = Vector2i(0, 8)
+9:4/0/z_index = 1
+10:4/0 = 0
+10:4/0/texture_origin = Vector2i(0, 8)
+10:4/0/z_index = 1
+10:5/0 = 0
+10:5/0/texture_origin = Vector2i(0, 8)
+10:5/0/z_index = 1
+9:5/0 = 0
+9:5/0/texture_origin = Vector2i(0, 8)
+9:5/0/z_index = 1
+8:5/0 = 0
+8:5/0/texture_origin = Vector2i(0, 8)
+8:5/0/z_index = 1
+7:5/0 = 0
+7:5/0/texture_origin = Vector2i(0, 8)
+7:5/0/z_index = 1
+6:5/0 = 0
+6:5/0/texture_origin = Vector2i(0, 8)
+6:5/0/z_index = 1
+5:5/0 = 0
+5:5/0/texture_origin = Vector2i(0, 8)
+5:5/0/z_index = 1
+4:5/0 = 0
+4:5/0/texture_origin = Vector2i(0, 8)
+4:5/0/z_index = 1
+3:5/0 = 0
+3:5/0/texture_origin = Vector2i(0, 8)
+3:5/0/z_index = 1
+2:5/0 = 0
+2:5/0/texture_origin = Vector2i(0, 8)
+2:5/0/z_index = 1
+1:5/0 = 0
+1:5/0/texture_origin = Vector2i(0, 8)
+1:5/0/z_index = 1
+0:5/0 = 0
+0:5/0/texture_origin = Vector2i(0, 8)
+0:5/0/z_index = 1
+0:6/0 = 0
+0:6/0/texture_origin = Vector2i(0, 8)
+0:6/0/z_index = 1
+2:6/0 = 0
+2:6/0/texture_origin = Vector2i(0, 8)
+2:6/0/z_index = 1
+3:6/0 = 0
+3:6/0/texture_origin = Vector2i(0, 8)
+3:6/0/z_index = 1
+1:6/0 = 0
+1:6/0/texture_origin = Vector2i(0, 8)
+1:6/0/z_index = 1
+4:6/0 = 0
+4:6/0/texture_origin = Vector2i(0, 8)
+4:6/0/z_index = 1
+5:6/0 = 0
+5:6/0/texture_origin = Vector2i(0, 8)
+5:6/0/z_index = 1
+6:6/0 = 0
+6:6/0/texture_origin = Vector2i(0, 8)
+6:6/0/z_index = 1
+7:6/0 = 0
+7:6/0/texture_origin = Vector2i(0, 8)
+7:6/0/z_index = 1
+8:6/0 = 0
+8:6/0/texture_origin = Vector2i(0, 8)
+8:6/0/z_index = 1
+9:6/0 = 0
+9:6/0/texture_origin = Vector2i(0, 8)
+9:6/0/z_index = 1
+10:6/0 = 0
+10:6/0/texture_origin = Vector2i(0, 8)
+10:6/0/z_index = 1
+0:7/0 = 0
+0:7/0/texture_origin = Vector2i(0, 8)
+0:7/0/z_index = 1
+1:7/0 = 0
+1:7/0/texture_origin = Vector2i(0, 8)
+1:7/0/z_index = 1
+3:7/0 = 0
+3:7/0/texture_origin = Vector2i(0, 8)
+3:7/0/z_index = 1
+4:7/0 = 0
+4:7/0/texture_origin = Vector2i(0, 8)
+4:7/0/z_index = 1
+0:8/0 = 0
+0:8/0/texture_origin = Vector2i(0, 8)
+0:8/0/z_index = 1
+1:8/0 = 0
+1:8/0/texture_origin = Vector2i(0, 8)
+1:8/0/z_index = 1
+2:8/0 = 0
+2:8/0/texture_origin = Vector2i(0, 8)
+2:8/0/z_index = 1
+3:8/0 = 0
+3:8/0/texture_origin = Vector2i(0, 8)
+3:8/0/z_index = 1
+4:8/0 = 0
+4:8/0/texture_origin = Vector2i(0, 8)
+4:8/0/z_index = 1
+5:8/0 = 0
+5:8/0/texture_origin = Vector2i(0, 8)
+5:8/0/z_index = 1
+6:8/0 = 0
+6:8/0/texture_origin = Vector2i(0, 8)
+6:8/0/z_index = 1
+7:8/0 = 0
+7:8/0/texture_origin = Vector2i(0, 8)
+7:8/0/z_index = 1
+8:8/0 = 0
+8:8/0/texture_origin = Vector2i(0, 8)
+8:8/0/z_index = 1
+5:7/0 = 0
+5:7/0/texture_origin = Vector2i(0, 8)
+5:7/0/z_index = 1
+6:7/0 = 0
+6:7/0/texture_origin = Vector2i(0, 8)
+6:7/0/z_index = 1
+7:7/0 = 0
+7:7/0/texture_origin = Vector2i(0, 8)
+7:7/0/z_index = 1
+8:7/0 = 0
+8:7/0/texture_origin = Vector2i(0, 8)
+8:7/0/z_index = 1
+9:7/0 = 0
+9:7/0/texture_origin = Vector2i(0, 8)
+9:7/0/z_index = 1
+10:7/0 = 0
+10:7/0/texture_origin = Vector2i(0, 8)
+10:7/0/z_index = 1
+10:8/0 = 0
+10:8/0/texture_origin = Vector2i(0, 8)
+10:8/0/z_index = 1
+9:9/0 = 0
+9:9/0/texture_origin = Vector2i(0, 8)
+9:9/0/z_index = 1
+9:8/0 = 0
+9:8/0/texture_origin = Vector2i(0, 8)
+9:8/0/z_index = 1
+10:9/0 = 0
+10:9/0/texture_origin = Vector2i(0, 8)
+10:9/0/z_index = 1
+10:10/0 = 0
+10:10/0/texture_origin = Vector2i(0, 8)
+10:10/0/z_index = 1
+9:10/0 = 0
+9:10/0/texture_origin = Vector2i(0, 8)
+9:10/0/z_index = 1
+8:10/0 = 0
+8:10/0/texture_origin = Vector2i(0, 8)
+8:10/0/z_index = 1
+7:10/0 = 0
+7:10/0/texture_origin = Vector2i(0, 8)
+7:10/0/z_index = 1
+6:10/0 = 0
+6:10/0/texture_origin = Vector2i(0, 8)
+6:10/0/z_index = 1
+5:10/0 = 0
+5:10/0/texture_origin = Vector2i(0, 8)
+5:10/0/z_index = 1
+4:10/0 = 0
+4:10/0/texture_origin = Vector2i(0, 8)
+4:10/0/z_index = 1
+3:10/0 = 0
+3:10/0/texture_origin = Vector2i(0, 8)
+3:10/0/z_index = 1
+2:10/0 = 0
+2:10/0/texture_origin = Vector2i(0, 8)
+2:10/0/z_index = 1
+1:10/0 = 0
+1:10/0/texture_origin = Vector2i(0, 8)
+1:10/0/z_index = 1
+0:10/0 = 0
+0:10/0/texture_origin = Vector2i(0, 8)
+0:10/0/z_index = 1
+0:9/0 = 0
+0:9/0/texture_origin = Vector2i(0, 8)
+0:9/0/z_index = 1
+1:9/0 = 0
+1:9/0/texture_origin = Vector2i(0, 8)
+1:9/0/z_index = 1
+2:9/0 = 0
+2:9/0/texture_origin = Vector2i(0, 8)
+2:9/0/z_index = 1
+3:9/0 = 0
+3:9/0/texture_origin = Vector2i(0, 8)
+3:9/0/z_index = 1
+4:9/0 = 0
+4:9/0/texture_origin = Vector2i(0, 8)
+4:9/0/z_index = 1
+5:9/0 = 0
+5:9/0/texture_origin = Vector2i(0, 8)
+5:9/0/z_index = 1
+6:9/0 = 0
+6:9/0/texture_origin = Vector2i(0, 8)
+6:9/0/z_index = 1
+7:9/0 = 0
+7:9/0/texture_origin = Vector2i(0, 8)
+7:9/0/z_index = 1
+8:9/0 = 0
+8:9/0/texture_origin = Vector2i(0, 8)
+8:9/0/z_index = 1
+2:7/0 = 0
+2:7/0/texture_origin = Vector2i(0, 8)
+2:7/0/z_index = 1
+
+[sub_resource type="TileSet" id="TileSet_8dgmp"]
+tile_shape = 1
+tile_layout = 5
+tile_size = Vector2i(32, 16)
+sources/2 = SubResource("TileSetAtlasSource_xarfk")
+sources/0 = SubResource("TileSetAtlasSource_ik62b")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ejf6u"]
+atlas = ExtResource("2_631f6")
+region = Rect2(32, 53, 16, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_51g57"]
+atlas = ExtResource("2_631f6")
+region = Rect2(0, 52, 16, 18)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7ytvd"]
+atlas = ExtResource("2_631f6")
+region = Rect2(16, 52, 16, 18)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v47yw"]
+atlas = ExtResource("2_631f6")
+region = Rect2(112, 52, 16, 18)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tc5n0"]
+atlas = ExtResource("2_631f6")
+region = Rect2(64, 52, 16, 18)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4oj72"]
+atlas = ExtResource("2_631f6")
+region = Rect2(48, 52, 16, 18)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xjcwc"]
+atlas = ExtResource("2_631f6")
+region = Rect2(80, 52, 16, 18)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tp2m4"]
+atlas = ExtResource("2_631f6")
+region = Rect2(96, 52, 16, 18)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jirxe"]
+atlas = ExtResource("2_631f6")
+region = Rect2(32, 29, 16, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2qjl8"]
+atlas = ExtResource("2_631f6")
+region = Rect2(32, 53, 16, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qtu6w"]
+atlas = ExtResource("2_631f6")
+region = Rect2(32, 77, 16, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bb4dj"]
+atlas = ExtResource("2_631f6")
+region = Rect2(0, 29, 16, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qfh5r"]
+atlas = ExtResource("2_631f6")
+region = Rect2(0, 53, 16, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ksfjq"]
+atlas = ExtResource("2_631f6")
+region = Rect2(0, 77, 16, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fkkf4"]
+atlas = ExtResource("2_631f6")
+region = Rect2(16, 29, 16, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nk017"]
+atlas = ExtResource("2_631f6")
+region = Rect2(16, 53, 16, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hjxgi"]
+atlas = ExtResource("2_631f6")
+region = Rect2(16, 77, 16, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_co26n"]
+atlas = ExtResource("2_631f6")
+region = Rect2(112, 29, 16, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p3rx0"]
+atlas = ExtResource("2_631f6")
+region = Rect2(112, 53, 16, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cyyhe"]
+atlas = ExtResource("2_631f6")
+region = Rect2(112, 77, 16, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vvx6u"]
+atlas = ExtResource("2_631f6")
+region = Rect2(64, 29, 16, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_30i6f"]
+atlas = ExtResource("2_631f6")
+region = Rect2(64, 53, 16, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pabvy"]
+atlas = ExtResource("2_631f6")
+region = Rect2(64, 77, 16, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rfgj6"]
+atlas = ExtResource("2_631f6")
+region = Rect2(48, 29, 16, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4wmuj"]
+atlas = ExtResource("2_631f6")
+region = Rect2(48, 53, 16, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_phxor"]
+atlas = ExtResource("2_631f6")
+region = Rect2(48, 77, 16, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_avcwe"]
+atlas = ExtResource("2_631f6")
+region = Rect2(80, 29, 16, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3hlqk"]
+atlas = ExtResource("2_631f6")
+region = Rect2(80, 53, 16, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w8luo"]
+atlas = ExtResource("2_631f6")
+region = Rect2(80, 77, 16, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k7mcq"]
+atlas = ExtResource("2_631f6")
+region = Rect2(96, 29, 16, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j237r"]
+atlas = ExtResource("2_631f6")
+region = Rect2(96, 53, 16, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qvjsj"]
+atlas = ExtResource("2_631f6")
+region = Rect2(96, 77, 16, 17)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_w8r6a"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ejf6u")
+}],
+"loop": true,
+"name": &"standing_east",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_51g57")
+}],
+"loop": true,
+"name": &"standing_north",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7ytvd")
+}],
+"loop": true,
+"name": &"standing_north_east",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v47yw")
+}],
+"loop": true,
+"name": &"standing_north_west",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tc5n0")
+}],
+"loop": true,
+"name": &"standing_south",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4oj72")
+}],
+"loop": true,
+"name": &"standing_south_east",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xjcwc")
+}],
+"loop": true,
+"name": &"standing_south_west",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tp2m4")
+}],
+"loop": true,
+"name": &"standing_west",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jirxe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2qjl8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qtu6w")
+}],
+"loop": true,
+"name": &"walk_east",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bb4dj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qfh5r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ksfjq")
+}],
+"loop": true,
+"name": &"walk_north",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fkkf4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nk017")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hjxgi")
+}],
+"loop": true,
+"name": &"walk_north_east",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_co26n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p3rx0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cyyhe")
+}],
+"loop": true,
+"name": &"walk_north_west",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vvx6u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_30i6f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pabvy")
+}],
+"loop": true,
+"name": &"walk_south",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rfgj6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4wmuj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_phxor")
+}],
+"loop": true,
+"name": &"walk_south_east",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_avcwe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3hlqk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w8luo")
+}],
+"loop": true,
+"name": &"walk_south_west",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k7mcq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j237r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qvjsj")
+}],
+"loop": true,
+"name": &"walk_west",
+"speed": 10.0
+}]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Main" type="TileMapLayer" parent="."]
+y_sort_enabled = true
+position = Vector2(-2, 8)
+tile_map_data = PackedByteArray("AAD//wAAAAAHAAEAAAAAAAAAAAAHAAEAAAD//wEAAAAIAAEAAAAAAAEAAAAIAAEAAAD/////AAAHAAEAAAAAAP//AAAHAAMAAAABAP//AAAHAAMAAAABAAAAAAAHAAMAAAABAAEAAAAHAAEAAAABAAIAAAAIAAEAAAAAAAMAAAADAAMAAAD//wMAAAADAAMAAAD//wIAAAAAAAAAAAAAAAIAAAAIAAEAAAD+/wMAAAAAAAAAAAD+/wIAAAAAAAAAAAD+/wEAAAAIAAEAAAD+/wAAAAAIAAEAAAD+////AAAHAAEAAAD+//7/AAAHAAMAAAD///7/AAAHAAMAAAACAAAAAAAHAAMAAAADAAAAAAAHAAMAAAADAAEAAAAGAAEAAAADAAIAAAAGAAEAAAACAAIAAAAHAAEAAAACAAEAAAAGAAEAAAAAAP7/AAAHAAMAAAADAAMAAAAHAAEAAAADAP//AAAHAAMAAAADAP7/AAAHAAMAAAD9/wMAAAADAAIAAAD9/wIAAAADAAAAAAD9/wEAAAADAAAAAAD9/wAAAAAIAAEAAAD9////AAAIAAEAAAD9//7/AAAGAAEAAAD9/wQAAAADAAIAAAD+/wQAAAADAAIAAAD//wQAAAADAAMAAAAAAAQAAAADAAMAAAABAAQAAAADAAMAAAADAAQAAAAIAAEAAAD8/wQAAAADAAAAAAD8/wMAAAADAAIAAAD8/wEAAAADAAAAAAD8/wAAAAADAAAAAAD8////AAAAAAAAAAD8//7/AAAGAAEAAAD8//3/AAAGAAEAAAD9//3/AAAHAAMAAAD+//3/AAAHAAMAAAADAP3/AAAHAAMAAAACAP3/AAAHAAMAAAD7/wQAAAADAAAAAAD7/wMAAAAAAAIAAAD7/wIAAAAAAAIAAAD7/wEAAAAAAAIAAAD7/wAAAAAAAAIAAAD8//z/AAAGAAEAAAD7//7/AAADAAMAAAD7////AAAAAAAAAAD7//3/AAADAAMAAAD7//z/AAADAAMAAAD9//z/AAAHAAMAAAD+//z/AAAHAAMAAAACAPz/AAAHAAMAAAADAPz/AAAHAAMAAAAEAAAAAAAHAAMAAAAEAP//AAAHAAMAAAAAAAUAAAADAAMAAAABAAUAAAADAAMAAAD9//v/AAAHAAMAAAD6//3/AAADAAMAAAD5//7/AAAAAAAAAAD5////AAAAAAAAAAD5/wAAAAAAAAAAAAD5/wEAAAAAAAAAAAD6/wEAAAAAAAAAAAD6/wIAAAAAAAAAAAD///r/AAAHAAMAAAD+//r/AAAHAAMAAAD8//v/AAAGAAEAAAD6//7/AAADAAMAAAD6////AAAAAAAAAAD6/wAAAAAAAAAAAAD6/wMAAAAAAAIAAAD6/wQAAAAAAAIAAAD7/wUAAAADAAAAAAD8/wUAAAADAAAAAAD9/wUAAAADAAMAAAD+/wUAAAADAAMAAAD//wUAAAADAAMAAAD5/wIAAAAAAAAAAAD5/wMAAAAAAAAAAAD5/wQAAAAAAAAAAAD5/wUAAAAAAAAAAAD6/wUAAAAAAAIAAAD8/wYAAAADAAAAAAD9/wYAAAADAAMAAAD9/wcAAAADAAMAAAD+/wcAAAADAAMAAAD//wcAAAADAAMAAAAAAAYAAAADAAMAAAD7//v/AAAAAAAAAAD6//z/AAADAAMAAAD+/wYAAAADAAMAAAD//wYAAAADAAMAAAABAAYAAAAAAAAAAAACAAYAAAAAAAAAAAAEAAUAAAAAAAIAAAAEAAQAAAAHAAEAAAAEAAMAAAAGAAEAAAAEAAIAAAAGAAEAAAAEAAEAAAAHAAMAAAACAPv/AAAHAAMAAAABAPv/AAAHAAMAAAADAAcAAAAAAAIAAAAEAAcAAAAAAAIAAAAEAAYAAAAAAAIAAAACAAcAAAAAAAIAAAACAAgAAAAAAAIAAAABAAcAAAAAAAAAAAABAAgAAAAAAAIAAAAAAAgAAAAAAAIAAAAAAAkAAAAAAAIAAAD//wkAAAAAAAIAAAD//wgAAAAAAAIAAAD+/wgAAAAAAAIAAAD8/wcAAAAAAAIAAAADAAgAAAAAAAIAAAABAAkAAAAAAAIAAAAAAAcAAAADAAMAAAAFAAMAAAAGAAEAAAAFAAIAAAAHAAMAAAAFAAEAAAAHAAMAAAAFAAAAAAAHAAMAAAAFAP//AAAHAAMAAAAFAP7/AAAHAAMAAAAEAP7/AAAHAAMAAAAEAP3/AAAHAAMAAAAEAPz/AAAAAAIAAAABAPn/AAAAAAIAAAAAAPj/AAAAAAIAAAD///j/AAAAAAIAAAD+//j/AAAAAAIAAAD6//v/AAADAAMAAAD5//v/AAAAAAAAAAD5//r/AAAAAAIAAAD5//z/AAAAAAAAAAD5//3/AAAAAAAAAAD+//n/AAAAAAAAAAD///n/AAAAAAAAAAAAAPr/AAAHAAMAAAABAPr/AAAHAAMAAAAAAPn/AAAAAAAAAAD4//r/AAAAAAIAAAD4//v/AAAAAAIAAAD4/wMAAAAAAAIAAAD4/wIAAAAAAAIAAAD4/wEAAAAAAAAAAAD3/wEAAAAAAAIAAAD3/wAAAAAAAAIAAAD3////AAAAAAIAAAD3//7/AAAAAAIAAAD4//3/AAAAAAIAAAD4//z/AAAAAAIAAAD4//7/AAAAAAAAAAD4/wAAAAAAAAAAAAD5/wYAAAAAAAIAAAD6/wYAAAAAAAIAAAD7/wYAAAADAAAAAAD7/wcAAAAAAAIAAAD8/wgAAAAAAAIAAAD9/wgAAAADAAMAAAD9/wkAAAAAAAIAAAD+/wkAAAAAAAIAAAD4/wUAAAAAAAIAAAD4/wQAAAAAAAIAAAD6/wcAAAAAAAIAAAD7/wgAAAAAAAIAAAD8/wkAAAAAAAIAAAD4////AAAAAAAAAAD6//r/AAAAAAAAAAD7//r/AAAAAAAAAAD7//n/AAAAAAAAAAD8//j/AAAAAAIAAAD9//j/AAAAAAIAAAD5//n/AAAAAAIAAAD6//n/AAAAAAIAAAD6//j/AAAAAAIAAAD7//j/AAAAAAIAAAD5/wcAAAAAAAIAAAD4/wYAAAAAAAIAAAD3/wIAAAAAAAIAAAD3//3/AAAAAAIAAAAFAP3/AAAHAAMAAAAGAP3/AAAAAAIAAAAGAP7/AAAHAAMAAAAHAP7/AAAAAAIAAAAHAP//AAAAAAIAAAAHAAAAAAAAAAIAAAAHAAEAAAAAAAIAAAAHAAIAAAAAAAIAAAAGAAIAAAAAAAIAAAAGAAMAAAAAAAIAAAAGAAQAAAAAAAIAAAAFAAUAAAAAAAIAAAAFAAYAAAAAAAIAAAAEAAgAAAAAAAIAAAADAAkAAAAAAAIAAAACAAkAAAAAAAIAAAACAAoAAAAAAAIAAAABAAoAAAAAAAIAAAAAAAoAAAAAAAIAAAD//woAAAAAAAIAAAD+/woAAAAAAAIAAAD7/wkAAAAAAAIAAAAGAAEAAAAHAAMAAAAGAAAAAAAHAAMAAAAGAP//AAAHAAMAAAAFAAQAAAAAAAIAAAD6/wgAAAAAAAIAAAD+//v/AQAAAAoAAAD///v/AQAAAAoAAAAAAPv/AQAAAAoAAAD///z/AQAAAAoAAAAAAPz/AQAAAAoAAAABAPz/AQAAAAoAAAD///3/AQAAAAoAAAAAAP3/AQAAAAoAAAABAP3/AQAAAAoAAAABAP7/AQAAAAoAAAACAP7/AQAAAAoAAAACAP//AQAAAAoAAAABAAMAAAAAAAAAAAACAAMAAAAAAAAAAAACAAQAAAAAAAAAAAACAAUAAAAAAAAAAAADAAUAAAAAAAAAAAADAAYAAAAAAAAAAAACAPr/AAAAAAAAAAADAPv/AAAAAAAAAAD8//r/AAAAAAAAAAD9//r/AAAAAAAAAAD9//n/AAAAAAAAAAD8//n/AAAAAAAAAAD8/wIAAAAAAAAAAAA=")
+tile_set = SubResource("TileSet_1mvlc")
+rendering_quadrant_size = 32
+
+[node name="Layer1" type="TileMapLayer" parent="."]
+y_sort_enabled = true
+position = Vector2(-2, 8)
+tile_map_data = PackedByteArray("AAD6/wUAAgAAAAUAAAD5/wIAAgABAAUAAAD5/wMAAgABAAUAAAD5/wQAAgABAAUAAAD6/wQAAgABAAUAAAD6/wYAAgABAAUAAAADAP//AgAAAAYAAAADAP7/AgAAAAYAAAADAP3/AgAAAAYAAAACAP3/AgAAAAYAAAACAPz/AgAAAAYAAAACAPv/AgAAAAYAAAABAPv/AgAAAAYAAAABAPr/AgAAAAYAAAAAAPr/AgAAAAYAAAD///r/AgAAAAYAAAD+//r/AgAAAAYAAAD9//r/AgAAAAYAAAD9//v/AgAAAAYAAAD+/wMAAAACAAQAAAD9/wMAAAACAAQAAAD9/wIAAAACAAQAAAD9/wEAAAACAAQAAAD8/wEAAAACAAQAAAD8/wIAAAACAAQAAAA=")
+tile_set = SubResource("TileSet_8dgmp")
+rendering_quadrant_size = 32
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_w8r6a")
+animation = &"standing_east"
+script = ExtResource("4_0r1c3")
+
+[node name="PathLine" type="Line2D" parent="."]
+position = Vector2(-2, 8)
+width = 3.0
+default_color = Color(0, 0.414062, 0.945361, 1)
